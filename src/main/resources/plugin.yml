@@ -1,0 +1,12 @@
+name: OrbitalStrikeCannonPlugin
+version: '1.0-SNAPSHOT'
+main: com.github.azurllo.orbitalStrikeCannonPlugin.OrbitalStrikeCannonPlugin
+api-version: '1.21'
+description: A plugin that adds orbital strike nukes and stabs
+author: Azurllo
+website: https://github.com/Azurllo/Orbital-Strike-Cannon-Plugin
+prefix: OrbitalCannonPlugin
+commands:
+  giverod:
+    description: Gives a special fishing rod
+    usage: /giverod <nuke|stab>
