@@ -13,7 +13,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.Vector;
 import java.util.concurrent.ThreadLocalRandom;
 
 
@@ -74,7 +73,7 @@ public class Nuke implements Listener {
                 tnt.setVelocity(new org.bukkit.util.Vector(xVel, currentVelocity.getZ(), zVel));
             });
 
-        }, 10L);
+        }, 20L);
 
     }
 }
