@@ -46,7 +46,7 @@ public class Nuke implements Listener {
         int blockX = targetBlock.getX();
         int blockY = targetBlock.getY();
         int blockZ = targetBlock.getZ();
-        Location spawnLocation = new Location(player.getWorld(), blockX + 0.5, blockY+75, blockZ + 0.5);
+        Location spawnLocation = new Location(player.getWorld(), blockX + 0.5, blockY+65, blockZ + 0.5);
         Bukkit.getScheduler().runTaskLater(plugin, () -> {
             for (int i = 0; i < 10; i++) {
                 for (int x = 0; x < 100; x++) {
@@ -60,7 +60,7 @@ public class Nuke implements Listener {
                         double xVel = -Math.sin(vectorDirection) * power;
                         double zVel =  Math.cos(vectorDirection) * power;
 
-                        tnt.setVelocity(new org.bukkit.util.Vector(xVel, currentVelocity.getZ(), zVel));
+                        tnt.setVelocity(new org.bukkit.util.Vector(xVel, 0, zVel));
                     });
                 }
             }
@@ -70,7 +70,7 @@ public class Nuke implements Listener {
                 double xVel = -Math.sin(vectorDirection) * 0;
                 double zVel =  Math.cos(vectorDirection) * 0;
 
-                tnt.setVelocity(new org.bukkit.util.Vector(xVel, currentVelocity.getZ(), zVel));
+                tnt.setVelocity(new org.bukkit.util.Vector(xVel, 0, zVel));
             });
 
         }, 20L);
